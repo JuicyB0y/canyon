@@ -1,0 +1,139 @@
+.form__wrapper {
+  margin-top: 113px;
+  //   width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  width: 63%;
+  background: #1c1c1c;
+  border-radius: 40px;
+  padding: 16px 44px 40px 44px;
+
+  &__name {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+
+.topBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.leftTop,
+.rightTop {
+  width: 44%;
+}
+
+.inputName,
+.inputError {
+  margin-top: 29px;
+  background-color: transparent;
+  border: none;
+
+  color: #fff;
+  font-size: 19px;
+  padding: 4px 7px;
+  width: 100%;
+}
+
+.inputName {
+  border-bottom: 1px solid #858585;
+}
+
+.inputError {
+  border-bottom: 1px solid #c02e41;
+}
+
+.inputName::placeholder,
+.inputError::placeholder {
+  color: #fff;
+  font-size: 15px;
+}
+
+.inputName:focus,
+.inputError:focus {
+  outline: none;
+}
+
+.bottomBlock {
+  margin-top: 30px;
+}
+
+.textLabel {
+  color: #858585;
+  font-size: 12px;
+  display: block;
+}
+
+.textarea {
+  margin-top: 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #858585;
+  color: #fff;
+  font-size: 19px;
+  padding: 4px 7px;
+  resize: none;
+  width: 100%;
+}
+
+.textarea:focus {
+  outline: none;
+}
+
+.button {
+  margin-top: 40px;
+  padding: 11px 22px;
+  color: #000;
+  font-size: 20px;
+  background-color: #fff;
+  border: none;
+  border-radius: 30px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+// .button:disabled {
+//   background-color: #c02e41;
+// }
+
+.contacts {
+  background: #1c1c1c;
+  border-radius: 40px;
+  padding: 16px 44px 40px 44px;
+  width: 33%;
+
+  &__items {
+    margin-top: 15px;
+  }
+
+  &__item {
+    margin-top: 10px;
+  }
+
+  &__type {
+    color: #858585;
+    font-size: 12px;
+  }
+
+  &__info {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 20px;
+  }
+}
+
+.errortext {
+  margin-top: 5px;
+
+  p {
+    color: #c02e41;
+  }
+}

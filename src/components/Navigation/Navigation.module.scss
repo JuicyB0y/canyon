@@ -1,0 +1,52 @@
+.background {
+  background-color: #1c1c1c;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  margin-left: 70px;
+}
+
+.navigation {
+  margin-top: 23px;
+  display: flex;
+  gap: 60px;
+}
+
+.navigation :global(a.active) {
+  border-bottom: 2px solid #f39f2e;
+}
+
+.link {
+  padding: 4px;
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+}
+
+.popup {
+  margin-right: 30px;
+  margin-top: 10px;
+  height: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &_one,
+  &_two {
+    width: 34px;
+    height: 3px;
+    background-color: #fff;
+  }
+
+  &_two {
+    // margin-top: 10px;
+  }
+}
+
+.wrapperStyles {
+  padding-left: 70px;
+  padding-right: 30px;
+}

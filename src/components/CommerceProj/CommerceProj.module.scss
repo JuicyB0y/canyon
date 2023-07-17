@@ -1,0 +1,27 @@
+.projects {
+  display: flex;
+  gap: 50px;
+  margin-top: 70px;
+}
+
+.item {
+  width: 360px;
+}
+
+.tag {
+  margin-top: 15px;
+  color: rgba(58, 58, 58, 0.85);
+  font-size: 20px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 10px;
+  //   height: 100%;
+  object-fit: cover;
+}
+
+.name {
+  color: #1c1c1c;
+  font-size: 20px;
+}

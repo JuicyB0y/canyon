@@ -1,0 +1,98 @@
+.extraStyles {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 50px;
+  width: 1300px;
+  margin-top: 80px;
+}
+
+.collection {
+  width: 230px;
+
+  &__nameWrapper {
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba($color: #000000, $alpha: 0.2);
+  }
+
+  &__name {
+    color: #303030;
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+
+.labelWrapper {
+  margin-top: 36px;
+  white-space: nowrap;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: #303030;
+  font-size: 20px;
+  font-weight: 300;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.materials {
+  margin-top: 50px;
+}
+
+.fromTop {
+  margin-top: 200px;
+}

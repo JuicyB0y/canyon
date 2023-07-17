@@ -1,0 +1,422 @@
+.extraStyles {
+  display: block;
+}
+
+.description {
+  display: flex;
+  width: 100%;
+  gap: 78px;
+}
+
+.slider {
+  width: 60%;
+
+  &__image {
+    height: 838px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: -5px;
+  }
+
+  &__grey {
+    background-color: #d9d9d9;
+    height: 838px;
+  }
+
+  &__panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0px 0px 30px 0px;
+    background: #efefef;
+    padding: 26px 55px 26px 31px;
+  }
+
+  &__hashtag {
+    color: rgba(58, 58, 58, 0.85);
+    font-size: 20px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 20px;
+  }
+
+  // &__prevButton {
+  //   margin-right: 20px;
+  // }
+
+  &__prevButton,
+  &__nextButton {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 17.5px;
+    background: #2d2d2d;
+    width: 33px;
+    height: 33px;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__prevImg,
+  &__nextImg {
+    display: block;
+    width: 19px;
+    height: 19px;
+    margin: auto;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__prevButton:hover,
+  &__nextButton:hover {
+    transition: all 0.3s;
+    background: #e0e0e0;
+
+    .slider__prevImg,
+    .slider__nextImg {
+      transition: all 0.5s ease;
+      filter: invert(99%) sepia(1%) saturate(69%) hue-rotate(315deg) brightness(98%) contrast(80%);
+    }
+  }
+}
+.slider__nextImg {
+  transform: rotate(180deg);
+}
+
+.info {
+  margin-top: 125px;
+  width: 25%;
+  &__hashtag {
+    color: rgba(58, 58, 58, 0.85);
+    font-size: 20px;
+  }
+
+  &__header {
+    color: rgba(58, 58, 58, 0.85);
+    font-size: 55px;
+    white-space: nowrap;
+  }
+
+  &__text {
+    color: rgba(58, 58, 58, 0.85);
+    font-size: 15px;
+    line-height: 130%;
+  }
+
+  &__butttons {
+    display: flex;
+    margin: 28px 0;
+    gap: 15px;
+  }
+
+  &__costing {
+    padding: 12px 45px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 20px;
+    background: #2d2d2d;
+    border: 1px solid #2d2d2d;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__costing:hover {
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #c6c6c6;
+    background: transparent;
+    color: #363637;
+  }
+
+  &__price {
+    padding: 12px 35px;
+    border-radius: 20px;
+    color: #2d2d2d;
+    font-size: 20px;
+    background: transparent;
+    border: 1px solid #c6c6c6;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  &__price:hover {
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #2d2d2d;
+    background: #2d2d2d;
+    color: #fff;
+  }
+
+  &__colors {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+  }
+
+  &__name {
+    color: #363637;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &__circles {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__circleWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  //   &__circleWrapper:nth-child(1) {
+  //     &::after {
+  //       content: '';
+  //       position: absolute;
+  //       top: 50%;
+  //       left: 50%;
+  //       transform: translate(-50%, -42%);
+  //       width: 20px;
+  //       height: 20px;
+  //       background-image: url('../../../assets/check_mark.svg');
+  //       background-repeat: no-repeat;
+  //     }
+  //   }
+
+  &__circleBorder {
+    padding: 1px;
+    border-radius: 29px;
+  }
+
+  &__circleBright {
+    border: 2px solid #e8dfd0;
+  }
+  &__circleDark {
+    border: 2px solid #565356;
+  }
+  &__circleGold {
+    border: 2px solid #bd9e70;
+  }
+  &__circleGray {
+    border: 2px solid #b7a191;
+  }
+  &__circleDakota_1 {
+    border: 2px solid #e7ddd6;
+  }
+  &__circleDakota_2 {
+    border: 2px solid #c09e66;
+  }
+  &__circleDakota_3 {
+    border: 2px solid #5a3829;
+  }
+  &__circleDakota_4 {
+    border: 2px solid #79746c;
+  }
+  &__circleDakota_5 {
+    border: 2px solid #4e3328;
+  }
+  &__circleArizona_3 {
+    border: 2px solid #f3edde;
+  }
+  &__circleArizona_63 {
+    border: 2px solid #646263;
+  }
+  &__circleArizona_68 {
+    border: 2px solid #967c66;
+  }
+  &__circleArizona_69 {
+    border: 2px solid #ac9d8f;
+  }
+  &__circleIndigo_3 {
+    border: 2px solid #cdc5b7;
+  }
+  &__circleIndigo_68 {
+    border: 2px solid #d2c095;
+  }
+  &__circleIndigo_69 {
+    border: 2px solid #ac9175;
+  }
+  &__circleTravertine_3 {
+    border: 2px solid #f3edde;
+  }
+  &__circleTravertine_7 {
+    border: 2px solid #646263;
+  }
+  &__circleTravertine_11 {
+    border: 2px solid #967c66;
+  }
+  &__circleTravertine_20 {
+    border: 2px solid #ac9d8f;
+  }
+
+  &__check {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -48%);
+    width: 20px;
+    height: 20px;
+  }
+
+  &__parameters {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  &__parametersName,
+  &__parametersInfo {
+    color: #363637;
+    font-size: 15px;
+
+    p {
+      margin-top: 2px;
+    }
+  }
+}
+
+.color {
+  margin: 64px 70px;
+  &__header {
+    color: rgba(23, 23, 23, 0.73);
+    font-size: 41px;
+  }
+
+  &__cards {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 50px;
+  }
+
+  &__card {
+    width: 280px;
+  }
+
+  &__cardWrapper {
+    width: 100%;
+    position: relative;
+  }
+
+  &__name {
+    margin-top: -10px;
+    margin-left: 15px;
+    color: rgba(48, 48, 48, 0.73);
+    font-size: 15px;
+  }
+
+  &__text {
+    margin-top: 33px;
+    color: rgba(49, 49, 49, 0.73);
+    font-size: 15px;
+  }
+
+  &__extra {
+    margin-top: 140px;
+    color: rgba(23, 23, 23, 0.73);
+    font-size: 41px;
+  }
+
+  &__extraNames {
+    margin-top: 70px;
+    display: flex;
+    gap: 60px;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  &__item:nth-child(4) {
+    width: 180px;
+  }
+  &__itemName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 10px 11px 10px;
+    border-radius: 10px;
+    background: #efefef;
+    box-shadow: 3px 5px 6px 0px rgba(0, 0, 0, 0.25);
+    color: rgba(49, 49, 49, 0.73);
+    font-size: 20px;
+  }
+  &__itemPrice {
+    width: 62px;
+    padding: 7px 0;
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+    text-align: center;
+    //  padding: 3px 14px;
+    border-radius: 20px;
+    background: #959595;
+  }
+  &__itemImg {
+    margin-top: 30px;
+  }
+}
+
+.extraAdvStyles {
+  display: block;
+  width: 1300px;
+  padding: 38px 0 44px 0;
+}
+
+// .bgGray {
+//   background: rgba(0, 0, 0, 0.46);
+// }
+
+// .bgImage {
+//   background: url('../../../assets/kansas_68-bg.png') center center/cover no-repeat;
+// }
+
+.advantages {
+  &__header {
+    color: #dedede;
+    font-size: 41px;
+    font-weight: 400;
+  }
+
+  &__mark {
+    margin-top: 20px;
+    color: #dedede;
+    font-size: 20px;
+  }
+
+  &__reasons {
+    margin-top: 85px;
+    display: flex;
+    gap: 80px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-end;
+
+    div {
+      color: rgba(239, 239, 239, 0.88);
+      font-size: 154px;
+      line-height: 6rem;
+    }
+
+    p {
+      color: #dedede;
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    margin-top: 80px;
+    color: #dedede;
+    font-size: 20px;
+    width: 660px;
+    line-height: 125%;
+
+    div {
+      margin-top: 10px;
+    }
+  }
+}
+
+.fromTop {
+  margin-top: 100px;
+}

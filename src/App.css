@@ -1,0 +1,84 @@
+@import '~normalize.css';
+
+@font-face {
+  font-family: 'Bahnschrift';
+  src: url('./fonts/BAHNSCHRIFT.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: 'Bahnschrift';
+  src: url('./fonts/BAHNSCHRIFT-10.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+} */
+
+/* @font-face {
+  font-family: 'Bahnschrift';
+  src: url('./fonts/BAHNSCHRIFT-10.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+} */
+
+body {
+  font-family: 'Bahnschrift', sans-serif;
+  /* background-color: #fffafb; */
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* убради стрелки  у инпут type="number" */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

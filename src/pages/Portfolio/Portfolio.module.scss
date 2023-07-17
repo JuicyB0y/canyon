@@ -1,0 +1,44 @@
+.wrapper {
+  display: block;
+  //   width: 1300px;
+  padding-right: 30px;
+  padding-left: 70px;
+}
+
+.sections {
+  margin-top: 60px;
+  display: flex;
+  gap: 10px;
+
+  &__button,
+  &__button_active {
+    padding: 8px 20px 8px 20px;
+    border-radius: 10px;
+    background: #1c1c1c;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  &__button:hover,
+  &__button_active:hover {
+    cursor: pointer;
+  }
+
+  &__button_active {
+    background: #fff;
+    color: #1c1c1c;
+    border: 1px solid #1c1c1c;
+  }
+}
+
+.temporary {
+  text-align: center;
+  margin-top: 150px;
+  color: #1c1c1c;
+  font-size: 55px;
+}
+
+.fromTop {
+  margin-top: 170px;
+}
