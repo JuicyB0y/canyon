@@ -1,9 +1,9 @@
 .gif {
   width: 100%;
   height: 873px;
-  background: url('../../assets/about_bg.png') center center/cover no-repeat;
-  // background: linear-gradient(0deg, rgba(0, 0, 0, 0.71) 0%, rgba(0, 0, 0, 0.71) 100%),
-  //   url('../../assets/about_gif_bg.gif') center center/cover no-repeat;
+  // background: url('../../assets/about_bg.png') center center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.71) 0%, rgba(0, 0, 0, 0.71) 100%),
+    url('../../assets/about_gif_bg.gif') center center/cover no-repeat;
 
   &__headerWrapper {
     display: flex;
