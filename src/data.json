@@ -1,77 +1,50 @@
 {
-  "leadingText": "All about",
+  "leadingText": "20",
   "slides": [
     {
-      "introline": "dogs",
-      "id": "dogs",
-      "content": {
-        "image": "https://via.placeholder.com/400x200?text=Dogs",
-        "copy": "Dog ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus."
-      }
+      "date": "03",
+      "image": "../../assets/history_img1.png",
+      "text": "Launch of Canyon <br/> Company Production"
     },
     {
-      "introline": "elephants",
-      "id": "elephants",
-      "content": {
-        "image": "https://via.placeholder.com/400x200?text=Elephants",
-        "copy": "Elephant ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus."
-      }
+      "date": "06",
+      "image": "./assets/history_img1.png",
+      "text": "Own fleet of vehicles"
     },
     {
-      "introline": "bears",
-      "id": "bears",
-      "content": {
-        "image": "https://via.placeholder.com/400x200?text=Bears",
-        "copy": "Bears ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus."
-      }
+      "date": "07",
+      "image": "./assets/history_img1.png",
+      "text": "The appearance of two-color panels"
     },
     {
-      "introline": "lizards",
-      "id": "lizards",
-      "content": {
-        "image": "https://via.placeholder.com/400x200?text=Lizards",
-        "copy": "Lizards ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus."
-      }
+      "date": "10",
+      "image": "./assets/history_img1.png",
+      "text": "Appearance of a new design - panels with overlapping joints"
     },
     {
-      "introline": "snakes",
-      "id": "snakes",
-      "content": {
-        "image": "https://via.placeholder.com/400x200?text=Snakes",
-        "copy": "Snakes ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus."
-      }
+      "date": "15",
+      "image": "./assets/history_img2.png",
+      "text": "We acquired a new site in Konakovo and launched production of premium multi-color panels."
     },
     {
-      "introline": "cats",
-      "id": "cats",
-      "content": {
-        "image": "https://via.placeholder.com/400x200?text=Cats",
-        "copy": "Cats ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus."
-      }
+      "date": "18",
+      "image": "./assets/history_img1.png",
+      "text": "Our engineers have improved the design of the upper mount, which improved the reliability of fixing panels 'Canyon' to the ventilated facade"
     },
     {
-      "introline": "giraffes",
-      "id": "giraffes",
-      "content": {
-        "image": "https://via.placeholder.com/400x200?text=Giraffes",
-        "copy": "Giraffes ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus."
-      }
+      "date": "20",
+      "image": "./assets/history_img1.png",
+      "text": "New «3D mosaic» panels, interfloor slabs and composite corners were developed."
     },
     {
-      "introline": "owls",
-      "id": "owls",
-      "content": {
-        "image": "https://via.placeholder.com/400x200?text=Owls",
-        "copy": "Owls ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus."
-      }
+      "date": "21",
+      "image": "./assets/history_img3.png",
+      "text": "A unique metal subsystem was developed and a technical certificate obtained for this subsystem, which allows to mount our products to a height of 75 meters, and with additional permission and calculations up to 150 meters"
     },
     {
-      "introline": "horses",
-      "id": "horses",
-      "content": {
-        "image": "https://via.placeholder.com/400x200?text=horses",
-        "copy": "Horses ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus."
-      }
+      "date": "22",
+      "image": "./assets/history_img1.png",
+      "text": "A system of plug-in panels in a specialized profile, new to us, was finalized and tested, and a technical certificate was obtained"
     }
   ]
 }

@@ -6,14 +6,52 @@ import Wrapper from '../../components/Wrapper/Wrapper';
 import missionImg_1 from '../../assets/about_result_1.png';
 import missionImg_2 from '../../assets/about_result_2.png';
 import pdf from '../../assets/about_pdf.png';
+import nature_1 from '../../assets/nature_1.png';
+import nature_2 from '../../assets/nature_2.png';
+import nature_3 from '../../assets/nature_3.png';
+import nature_4 from '../../assets/nature_4.png';
+
 import CanyonToday from '../../components/CanyonToday/CanyonToday';
 import VerticalCarousel from '../../components/VerticalCarousel/VerticalCarousel';
 
 import data from '../../data.json';
+import VerticalSwiper from '../../components/VerticalSwiper/VerticalSwiper';
+import BottomPart from '../../components/BootomPart/BottomPart';
+
+const natureInfoArr = [
+  {
+    img: nature_1,
+    header: 'С заботой об окружающей среде',
+    text: 'Canyon сочетает производство продукции высочайшего качества с реализацией решительной программы мероприятий, направленной на смягчение нашего воздействия на природную среду и экосистему.',
+    extraStyleImg: '',
+    flexStyle: styles.nature__section,
+  },
+  {
+    img: nature_2,
+    header: 'Экологичный подход к производству своих продуктов',
+    text: 'Все используемое сырье является полностью природными и безопасными. Компания придерживается экологически чистого подхода к производству своих продуктов и использует только натуральные материалы, добываемые из карьеров. Для насыщенных и естественных оттенков используются минеральные пигменты',
+    extraStyleImg: styles.nature__textLeft,
+    flexStyle: styles.nature__sectionReverse,
+  },
+  {
+    img: nature_3,
+    header: 'Рациональное потребление ресурсов',
+    text: 'Завод Canyon достиг высоких стандартов энергоэффективности. Мы используем современные технологии и оборудование, которые позволяют снизить потребление энергии в процессе производства и уменьшить негативное воздействие на окружающую среду. Выбирая фасадные панели Canyon, вы получаете не только качественный и безопасный продукт, но и заботитесь об экологической чистоте производства.',
+    extraStyleImg: '',
+    flexStyle: styles.nature__section,
+  },
+  {
+    img: nature_4,
+    header: 'Природа как источник красоты и вдохновения',
+    text: 'При создании фибробетонных панелей мы вдохновлялись природой и ее красотой. Нашей задачей было создание материала, который бы максимально точно имитировал природные поверхности, такие как камень, дерево и травертин. Благодаря уникальному дизайну продуктовая линейка CANYON стала популярным материалом для создания фасадов и интерьеров в любых стилях от классического до современного. Наши панели не только эстетически привлекательны, но и функциональны, что делает их идеальным материалом для любого дизайна экстерьера.',
+    extraStyleImg: styles.nature__textLeft,
+    flexStyle: styles.nature__sectionReverse,
+  },
+];
 
 const AboutCompany = () => {
   return (
-    <div>
+    <>
       <section className={styles.gif}>
         <div className={styles.gif__headerWrapper}>
           <h1 className={styles.gif__header}>Давайте познакомимся ближе</h1>
@@ -89,13 +127,33 @@ const AboutCompany = () => {
       <Wrapper extraStyles={styles.todayWrapper}>
         <CanyonToday />
 
-        <div className={styles.story}>
-          <h3 className={styles.story__header}>Наша история</h3>
+        {/* <div className={styles.story}> */}
+        {/* <h3 className={styles.story__header}>Наша история</h3> */}
 
-          <VerticalCarousel data={data.slides} leadingText={data.leadingText} />
-        </div>
+        <VerticalSwiper />
+
+        {/* <VerticalCarousel data={data.slides} leadingText={data.leadingText} /> */}
+        {/* </div> */}
       </Wrapper>
-    </div>
+
+      <Wrapper>
+        <section className={styles.nature}>
+          <h3 className={styles.nature__header}>С заботой о природе</h3>
+
+          {natureInfoArr.map(({ img, header, text, extraStyleImg, flexStyle }, index) => (
+            <div key={index} className={flexStyle}>
+              <img className={styles.nature__imgLeft} src={img} alt="photo" />
+              <div className={extraStyleImg}>
+                <p className={styles.nature__infoHeader}>{header}</p>
+                <p className={styles.nature__infoText}>{text}</p>
+              </div>
+            </div>
+          ))}
+        </section>
+      </Wrapper>
+
+      <BottomPart fromTop={styles.fromTop} />
+    </>
   );
 };
 

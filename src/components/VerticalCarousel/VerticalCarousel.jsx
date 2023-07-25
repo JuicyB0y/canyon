@@ -12,7 +12,7 @@ const VerticalCarousel = ({ data, leadingText }) => {
   const halfwayIndex = Math.ceil(data.length / 2);
 
   // Usd to determine the height/spacing of each item
-  const itemHeight = 52;
+  const itemHeight = 252;
 
   // Used to determine at what point an item is moved from the top to the bottom
   const shuffleThreshold = halfwayIndex * itemHeight;
@@ -48,7 +48,7 @@ const VerticalCarousel = ({ data, leadingText }) => {
     setActiveIndex((prevIndex) => {
       if (direction === 'next') {
         if (prevIndex + 1 > data.length - 1) {
-          return 0;
+          return data.length - 1;
         }
         return prevIndex + 1;
       }
@@ -64,13 +64,6 @@ const VerticalCarousel = ({ data, leadingText }) => {
   return (
     <section className={styles.outer__container}>
       <div className={styles.carousel__wrapper}>
-        <button
-          type="button"
-          className={`${styles.carousel_button} ${styles.prev}`}
-          onClick={() => handleClick('prev')}>
-          <img src={arr_up} alt="arrow" />
-        </button>
-
         <div className={styles.carousel}>
           <div className={styles.leading_text}>
             <p>{leadingText}</p>
@@ -81,10 +74,9 @@ const VerticalCarousel = ({ data, leadingText }) => {
                 <button
                   type="button"
                   onClick={() => setActiveIndex(i)}
-                  className={cn(styles.carousel_item, {
-                    active: activeIndex === i,
-                    visible: Math.abs(determinePlacement(i)) <= visibleStyleThreshold,
-                  })}
+                  className={`${styles.carousel_item} ${activeIndex === i ? styles.active : ''} ${
+                    Math.abs(determinePlacement(i)) <= visibleStyleThreshold ? styles.visible : ''
+                  }`}
                   key={item.id}
                   style={{ transform: `translateY(${determinePlacement(i)}px)` }}>
                   {item.introline}
@@ -94,12 +86,21 @@ const VerticalCarousel = ({ data, leadingText }) => {
           </div>
         </div>
 
-        <button
-          type="button"
-          className={`${styles.carousel_button} ${styles.next}`}
-          onClick={() => handleClick('next')}>
-          <img src={arr_up} alt="arrow" />
-        </button>
+        <div className={styles.buttonWrapper}>
+          <button
+            type="button"
+            className={`${styles.carousel_button} ${styles.prev}`}
+            onClick={() => handleClick('prev')}>
+            <img src={arr_up} alt="arrow" />
+          </button>
+
+          <button
+            type="button"
+            className={`${styles.carousel_button} ${styles.next}`}
+            onClick={() => handleClick('next')}>
+            <img src={arr_up} alt="arrow" />
+          </button>
+        </div>
       </div>
       <div className={styles.content}>
         <img src={data[activeIndex].content.image} alt={data[activeIndex].content.introline} />

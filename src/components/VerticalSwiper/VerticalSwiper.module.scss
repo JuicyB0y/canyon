@@ -1,0 +1,260 @@
+.bigWrapper {
+  position: relative;
+  margin-top: 100px;
+}
+
+.header {
+  color: #000;
+  font-size: 55px;
+  position: absolute;
+  top: 130px;
+  z-index: 100;
+}
+
+.verticalSwiper {
+  position: relative;
+}
+
+.wrapper {
+  //   margin-top: -250px;
+
+  display: flex;
+  position: relative;
+  height: 110vh;
+}
+
+.static {
+  color: transparent;
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  text-stroke: 1px rgb(0, 0, 0);
+  position: absolute;
+  font-size: 200px;
+  top: 250px;
+}
+
+.left {
+  flex: 1;
+  //   justify-content: flex-end;
+  //   align-items: flex-end;
+}
+
+.swiperItem {
+  margin-left: 300px;
+  font-size: 200px;
+  color: #bfbfbf;
+  transition: all 0.3s ease-in-out;
+}
+.itemActive {
+  transition: all 0.5s ease-in;
+  color: #e29b36;
+}
+
+.right {
+  position: relative;
+  margin-top: 150px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  &__content {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+  }
+
+  &__visible {
+    opacity: 1;
+  }
+
+  img {
+    object-fit: cover;
+    width: 546px;
+    height: 410px;
+  }
+
+  .text {
+    margin-top: 50px;
+    color: #000;
+    font-size: 35px;
+    word-wrap: break-word;
+    max-width: 540px;
+  }
+}
+
+.buttonWrapper {
+  position: absolute;
+  z-index: 10;
+  top: 450px;
+  left: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__button {
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    background: rgba(45, 45, 45, 0.56);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin-left: 150px;
+    transition: all 0.2s ease;
+  }
+  &__button:hover {
+    background: rgba(15, 14, 14, 0.716);
+    transition: all 0.2s ease;
+  }
+}
+
+.next {
+  transform: rotate(180deg);
+}
+
+.right_active {
+  //   opacity: 1;
+  //   animation: fade 0.3s; // duration of animation
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+//
+
+//
+
+// Копия старого варианта
+
+// .bigWrapper {
+//    position: relative;
+//    margin-top: 100px;
+//  }
+
+//  .header {
+//    color: #000;
+//    font-size: 55px;
+//    position: absolute;
+//    top: 130px;
+//    z-index: 100;
+//  }
+
+//  .verticalSwiper {
+//    position: relative;
+//  }
+
+//  .wrapper {
+//    //   margin-top: -250px;
+
+//    display: flex;
+//    position: relative;
+//    height: 110vh;
+//  }
+
+//  .static {
+//    color: transparent;
+//    -webkit-text-stroke: 2px rgb(0, 0, 0);
+//    text-stroke: 1px rgb(0, 0, 0);
+//    position: absolute;
+//    font-size: 200px;
+//    top: 250px;
+//  }
+
+//  .left {
+//    flex: 1;
+//    //   justify-content: flex-end;
+//    //   align-items: flex-end;
+//  }
+
+//  .swiperItem {
+//    margin-left: 300px;
+//    font-size: 200px;
+//    color: #bfbfbf;
+//  }
+//  .itemActive {
+//    transition: all 0.7s ease-in-out;
+//    color: #e29b36;
+//  }
+
+//  .right {
+//    margin-top: 150px;
+//    flex: 1;
+//    display: flex;
+//    flex-direction: column;
+//    align-items: flex-end;
+//    transition: all 0.3s;
+
+//    //   &__content {
+//    //     transition: opacity 0.5s linear; /* добавляем переход для свойства opacity */
+//    //   }
+
+//    img {
+//      object-fit: cover;
+//      width: 546px;
+//      height: 410px;
+//    }
+
+//    .text {
+//      margin-top: 50px;
+//      color: #000;
+//      font-size: 35px;
+//      word-wrap: break-word;
+//      max-width: 540px;
+//    }
+//  }
+
+//  .buttonWrapper {
+//    position: absolute;
+//    z-index: 10;
+//    bottom: 50px;
+//    left: 150px;
+//    display: flex;
+//    flex-direction: column;
+//    gap: 20px;
+
+//    &__button {
+//      width: 35px;
+//      height: 35px;
+//      border-radius: 10px;
+//      background: rgba(45, 45, 45, 0.56);
+//      border: none;
+//      outline: none;
+//      cursor: pointer;
+//      display: flex;
+//      justify-content: center;
+//      align-items: center;
+//      // margin-left: 150px;
+//    }
+//    &__button:hover {
+//      background: rgba(89, 89, 89, 0.56);
+//    }
+//  }
+
+//  .next {
+//    transform: rotate(180deg);
+//  }
+
+//  .right_active {
+//    //   opacity: 1;
+//    //   animation: fade 0.3s; // duration of animation
+//  }
+
+//  @keyframes fade {
+//    from {
+//      opacity: 0;
+//    }
+
+//    to {
+//      opacity: 1;
+//    }
+//  }
