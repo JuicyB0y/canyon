@@ -2,6 +2,7 @@ import React from 'react';
 import PanelPagePrototype from '../../../components/prototype/PanelPagePrototype';
 
 import Arizona_main from '../../../assets/arizona_main_68.png';
+import bgImage from '../../../assets/arizona_bg_68.png';
 
 const Arizona68 = () => {
   const aboutText = `Fiber concrete panels "Arizona" is an excellent solution for the arrangement of hinged ventilated facade. <br/>
@@ -17,6 +18,7 @@ const Arizona68 = () => {
       <PanelPagePrototype
         name="Arizona № 68"
         aboutText={aboutText}
+        bgImage={bgImage}
         activeColor={2}
         benefitText={benefitText}
         mainImg={Arizona_main}

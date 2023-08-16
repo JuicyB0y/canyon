@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navigation from '../../components/Navigation/Navigation';
 
 import styles from './Home.module.scss';
@@ -15,6 +15,7 @@ import Kanzas from '../../assets/Kanzas.png';
 import Arizona from '../../assets/Arizona.png';
 import Indigo from '../../assets/Indigo.png';
 import Dacota from '../../assets/Dacota.png';
+import Travertine from '../../assets/Travertine.png';
 
 import Quality from '../../assets/quality.svg';
 import Imitation from '../../assets/imitation.svg';
@@ -25,7 +26,7 @@ import Mounting from '../../assets/mounting.svg';
 import More from '../../assets/more.svg';
 
 import BottomPart from '../../components/BootomPart/BottomPart';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import CanyonToday from '../../components/CanyonToday/CanyonToday';
 
 const samples = [
@@ -33,6 +34,7 @@ const samples = [
   { sampleName: 'Arizona', image: Arizona },
   { sampleName: 'Indigo', image: Indigo },
   { sampleName: 'Dacota', image: Dacota },
+  { sampleName: 'Travertine', image: Travertine },
 ];
 
 const benefits = [
@@ -68,16 +70,13 @@ const benefits = [
   },
 ];
 
-const numbers = [
-  { number: '23', text: 'лет опыта' },
-  { number: '1000', text: 'клиентов в год' },
-  { number: '182', text: 'тысяч м² производства в год' },
-  { number: '20', text: 'партнеров в РФ' },
-  { number: '4', text: `стран мира, куда экспортируется продукция` },
-  { number: '3,6', text: 'млн м² производства за 20 лет ' },
-];
-
 const Home = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // console.log(location.pathname);
+  }, []);
+
   return (
     <>
       <section className={styles.facades}>
@@ -125,7 +124,7 @@ const Home = () => {
           {samples.map(({ sampleName, image }) => (
             <div key={sampleName} className={styles.kanzas}>
               <img className={styles.kanzas__img} src={image} alt="kanzas" />
-              <p>Kanzas</p>
+              <p>{sampleName}</p>
             </div>
           ))}
         </Wrapper>

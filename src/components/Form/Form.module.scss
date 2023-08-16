@@ -70,7 +70,8 @@
   display: block;
 }
 
-.textarea {
+.textarea,
+.textareaError {
   margin-top: 10px;
   background-color: transparent;
   border: none;
@@ -81,8 +82,12 @@
   resize: none;
   width: 100%;
 }
+.textareaError {
+  border-bottom: 1px solid #c02e41;
+}
 
-.textarea:focus {
+.textarea:focus,
+.textareaError:focus {
   outline: none;
 }
 
@@ -132,8 +137,10 @@
 
 .errortext {
   margin-top: 5px;
+  position: relative;
 
   p {
     color: #c02e41;
+    position: absolute;
   }
 }

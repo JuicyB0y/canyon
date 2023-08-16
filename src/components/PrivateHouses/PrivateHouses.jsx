@@ -15,31 +15,36 @@ const projectArr = [
   {
     itemClass: styles.item1,
     image: house1,
-    tagName: '#частные дома',
-    name: 'Дом в сосновом лесу',
+    tagName: '#private house',
+    name: 'House in pine forest',
   },
-  { itemClass: styles.item2, image: house2, tagName: '#частные дома', name: 'Коммерческий объект' },
+  { itemClass: styles.item2, image: house2, tagName: '#частные дома', name: 'Dark brick house' },
   {
     itemClass: styles.item3,
     image: house3,
-    tagName: '#частные дома',
-    name: 'Дом с черными элементами',
+    tagName: '#private house',
+    name: 'House with black elements',
   },
-  { itemClass: styles.item4, image: house4, tagName: '#частные дома', name: 'Дом с террасой' },
-  { itemClass: styles.item5, image: house5, tagName: '#частные дома', name: 'Дом с террасой' },
+  { itemClass: styles.item4, image: house4, tagName: '#private house', name: 'Terraced house' },
+  { itemClass: styles.item5, image: house5, tagName: '#private house', name: 'Chalet house' },
   {
     itemClass: styles.item6,
     image: house6,
-    tagName: '#частные дома',
-    name: 'Дом с дымовой трубой',
+    tagName: '#private house',
+    name: 'White brick house',
   },
   {
     itemClass: styles.item7,
     image: house7,
-    tagName: '#частные дома',
-    name: 'Дом с дымовой трубой',
+    tagName: '#private house',
+    name: 'House with a chimney',
   },
-  { itemClass: styles.item8, image: house8, tagName: '#частные дома', name: 'Коммерческий объект' },
+  {
+    itemClass: styles.item8,
+    image: house8,
+    tagName: '#private house',
+    name: 'House in the cottage',
+  },
 ];
 
 const PrivateHouses = () => {

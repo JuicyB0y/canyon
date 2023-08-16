@@ -1,3 +1,16 @@
+.backgroundFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #1c1c1c;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .background {
   background-color: #1c1c1c;
   height: 92px;
@@ -11,6 +24,7 @@
 }
 
 .navigation {
+  position: relative;
   margin-top: 23px;
   display: flex;
   gap: 60px;
@@ -49,4 +63,40 @@
 .wrapperStyles {
   padding-left: 70px;
   padding-right: 30px;
+}
+
+.popup {
+  &__partnership {
+    position: absolute;
+    top: 39px;
+    left: 438px;
+    background: #1c1c1c;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+    box-shadow: 0px 5px 26px rgb(0 0 0 / 17%);
+    opacity: 0;
+    transition: height 0.5s, opacity 0.3s;
+    list-style: none;
+    height: 0;
+  }
+
+  &__link {
+    line-height: 1.7;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+.popupActive {
+  position: absolute;
+  top: 39px;
+  left: 438px;
+  background: #1c1c1c;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+  box-shadow: 0px 5px 26px rgb(0 0 0 / 17%);
+  opacity: 1;
+  transition: height 0.3s, opacity 0.5s;
+  list-style: none;
+  height: 75px;
 }

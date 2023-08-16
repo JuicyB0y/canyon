@@ -12,18 +12,18 @@ import BottomPart from '../../components/BootomPart/BottomPart';
 
 const dealers = [
   {
-    name: 'Фронтмастер',
-    text: 'Компания ФРОНТМАСТЕР работает на рынке фасадных и кровельных материалов с 2009 года. Имеется свой собственный монтажный отдел, который занимается квалифицированным монтажом.',
+    name: 'FRONTMASTER',
+    text: 'The company FRONTMASTER has been operating in the market of facade and roofing materials since 2009. It has its own installation department, which deals with qualified installation.',
     image: Frontmaster,
   },
   {
     name: 'KamenHouse',
-    text: 'Компания KamenHouse продает и доставляет декоративный камень, клинкерную плитку и кирпич, тротуарную плитку и брусчатку, ступени, фасадные термопанели, сопутствующие материалы по Москве и Московской области, а так же в другие регионы России.',
+    text: 'The company KamenHouse sells and delivers decorative stone, clinker tiles and bricks, paving slabs and cobblestones, steps, facade thermal panels, accompanying materials in Moscow and the Moscow region, as well as in other regions of Russia.',
     image: Kamen,
   },
   {
-    name: 'Компания HotWell',
-    text: 'Компания НоtWell является абсолютным лидером в строительстве домов из СИП панелей. Имеет многолетний опыт на отечественном рынке в представленном сегменте.',
+    name: 'HotWell',
+    text: 'The company HotWell is an absolute leader in the construction of houses from SIP panels. It has many years of experience in the domestic market in the presented segment.',
     image: Hotwell,
   },
 ];
@@ -32,7 +32,7 @@ const Partnership = () => {
   return (
     <>
       <Wrapper extraStyles={styles.wrapper}>
-        <h1 className={styles.header}>Наши дилеры</h1>
+        <h1 className={styles.header}>Our dealers</h1>
         <div className={styles.dealers}>
           {dealers.map(({ name, text, image }, index) => (
             <div key={index} className={styles.item}>

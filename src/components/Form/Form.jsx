@@ -31,7 +31,7 @@ const Form = () => {
   return (
     <div className={styles.form__wrapper}>
       <form onSubmit={handleSubmit(onSubmit)} /* onSubmit={submitForm} */ className={styles.form}>
-        <h5 className={styles.form__name}>Оставить заявку на партнерство</h5>
+        <h5 className={styles.form__name}>Leave a request for partnership</h5>
 
         <div className={styles.topBlock}>
           <div className={styles.leftTop}>
@@ -39,13 +39,13 @@ const Form = () => {
               id="name"
               name="name"
               type="text"
-              placeholder="Имя"
+              placeholder="Name"
               className={`${errors?.name ? styles.inputError : styles.inputName}`} //styles.inputName
               {...register('name', {
-                required: 'Поле обязательно к заполнению',
+                required: 'field is required',
                 minLength: {
                   value: 3,
-                  message: 'Минимум 3 символа',
+                  message: 'Minimum 3 symbols',
                 },
                 maxLength: {
                   value: 30,
@@ -65,16 +65,16 @@ const Form = () => {
               id="secondname"
               name="secondname"
               type="text"
-              placeholder="Фамилия"
-              className={styles.inputName}
+              placeholder="Surname"
+              className={`${errors?.secondname ? styles.inputError : styles.inputName}`}
               {...register('secondname', {
                 minLength: {
                   value: 3,
-                  message: 'Минимум 3 символа',
+                  message: 'Minimum 3 symbols',
                 },
                 maxLength: {
                   value: 30,
-                  message: 'Слишком много символов',
+                  message: 'Too many symbols',
                 },
                 pattern: {
                   value: /^[A-Za-zА-ЯЁа-яё]+$/,
@@ -87,44 +87,19 @@ const Form = () => {
             </div>
 
             <input
-              id="thirdname"
-              name="thirdname"
-              type="text"
-              placeholder="Отчество"
-              className={styles.inputName}
-              {...register('thirdname', {
-                minLength: {
-                  value: 3,
-                  message: 'Минимум 3 символа',
-                },
-                maxLength: {
-                  value: 30,
-                  message: 'Слишком много символов',
-                },
-                pattern: {
-                  value: /^[A-Za-zА-ЯЁа-яё]+$/,
-                  message: 'Только буквы',
-                },
-              })}
-            />
-            <div className={styles.errortext}>
-              {errors?.thirdname && <p>{errors?.thirdname.message || 'Неверно заполнено'}</p>}
-            </div>
-
-            <input
               id="country"
               name="country"
               type="text"
-              placeholder="Страна"
-              className={styles.inputName}
+              placeholder="Country"
+              className={`${errors?.country ? styles.inputError : styles.inputName}`}
               {...register('country', {
                 minLength: {
                   value: 3,
-                  message: 'Минимум 3 символа',
+                  message: 'Minimum 3 symbols',
                 },
                 maxLength: {
                   value: 30,
-                  message: 'Слишком много символов',
+                  message: 'Too many symbols',
                 },
                 pattern: {
                   value: /^[A-Za-zА-ЯЁа-яё]+$/,
@@ -135,24 +110,22 @@ const Form = () => {
             <div className={styles.errortext}>
               {errors?.country && <p>{errors?.country.message || 'Неверно заполнено'}</p>}
             </div>
-          </div>
 
-          <div className={styles.rightTop}>
             <input
               id="email"
               name="email"
               type="email"
-              placeholder="Эл. адрес"
+              placeholder="Email"
               className={`${errors?.email ? styles.inputError : styles.inputName}`} //styles.inputName
               {...register('email', {
-                required: 'Поле обязательно к заполнению',
+                required: 'field is required',
                 minLength: {
                   value: 3,
-                  message: 'Минимум 3 символа',
+                  message: 'Minimum 3 symbols',
                 },
                 maxLength: {
                   value: 30,
-                  message: 'Слишком длинное имя',
+                  message: 'Too many symbols',
                 },
                 pattern: {
                   value:
@@ -164,21 +137,23 @@ const Form = () => {
             <div className={styles.errortext}>
               {errors?.email && <p>{errors?.email.message || 'Неверно заполнено'}</p>}
             </div>
+          </div>
 
+          <div className={styles.rightTop}>
             <input
               id="phone"
               name="phone"
               type="number"
-              placeholder="Телефон"
-              className={styles.inputName}
+              placeholder="Phone number"
+              className={`${errors?.phone ? styles.inputError : styles.inputName}`}
               {...register('phone', {
                 minLength: {
                   value: 7,
-                  message: 'Минимум 7 символов',
+                  message: 'Minimum 7 symbols',
                 },
                 maxLength: {
                   value: 15,
-                  message: 'Слишком длинный номер',
+                  message: 'Too many symbols',
                 },
               })}
             />
@@ -190,16 +165,16 @@ const Form = () => {
               id="company"
               name="company"
               type="text"
-              placeholder="Название компании или ИП"
-              className={styles.inputName}
+              placeholder="Name of company or individual entrepreneur"
+              className={`${errors?.company ? styles.inputError : styles.inputName}`}
               {...register('company', {
                 minLength: {
                   value: 3,
-                  message: 'Минимум 3 символа',
+                  message: 'Minimum 3 symbols',
                 },
                 maxLength: {
                   value: 30,
-                  message: 'Слишком много символов',
+                  message: 'Too many symbols',
                 },
               })}
             />
@@ -211,16 +186,16 @@ const Form = () => {
               id="city"
               name="city"
               type="text"
-              placeholder="Город"
-              className={styles.inputName}
+              placeholder="City"
+              className={`${errors?.city ? styles.inputError : styles.inputName}`}
               {...register('city', {
                 minLength: {
                   value: 3,
-                  message: 'Минимум 3 символа',
+                  message: 'Minimum 3 symbols',
                 },
                 maxLength: {
                   value: 20,
-                  message: 'Слишком много символов',
+                  message: 'Too many symbols',
                 },
                 pattern: {
                   value: /^[A-Za-zА-ЯЁа-яё]+$/,
@@ -236,21 +211,21 @@ const Form = () => {
 
         <div className={styles.bottomBlock}>
           <label htmlFor="textarea" className={styles.textLabel}>
-            Описание
+            Description
           </label>
           <textarea
             name="textarea"
             id="textarea"
-            placeholder="Чем занимаетесь, где находитесь, есть ли шоурум?"
-            className={styles.textarea}
+            placeholder="What do you do, where are you located, is there a showroom?"
+            className={`${errors?.textarea ? styles.textareaError : styles.textarea}`}
             {...register('textarea', {
               minLength: {
                 value: 3,
-                message: 'Минимум 3 символа',
+                message: 'Minimum 3 symbols',
               },
               maxLength: {
                 value: 200,
-                message: 'Слишком много символов',
+                message: 'Too many symbols',
               },
             })}
           />
@@ -260,24 +235,24 @@ const Form = () => {
         </div>
 
         <button type="submit" /* disabled={!isValid} */ className={styles.button}>
-          Отправить
+          Send
         </button>
       </form>
 
       <div className={styles.contacts}>
-        <h5 className={styles.form__name}>Наши контакты</h5>
+        <h5 className={styles.form__name}>Our contacts</h5>
 
         <div className={styles.contacts__items}>
           <div className={styles.contacts__item}>
-            <p className={styles.contacts__type}>Почта</p>
+            <p className={styles.contacts__type}>Email</p>
             <p className={styles.contacts__info}>info@canyon.com</p>
           </div>
           <div className={styles.contacts__item}>
-            <p className={styles.contacts__type}>Телефон</p>
+            <p className={styles.contacts__type}>Phone</p>
             <p className={styles.contacts__info}>+35797625</p>
           </div>
           <div className={styles.contacts__item}>
-            <p className={styles.contacts__type}>Адрес</p>
+            <p className={styles.contacts__type}>Adress</p>
             <p className={styles.contacts__info}>Ermou 16, Larnaca 6023, Cyprus</p>
           </div>
         </div>

@@ -42,7 +42,7 @@ const CatalogNavPart = () => {
         </div>
       </div>
 
-      <div className={styles.materials}>
+      {/* <div className={styles.materials}>
         <div className={styles.collection__nameWrapper}>
           <h3 className={styles.collection__name}>related materials</h3>
           <img className={styles.collection__img} src={Arrow} alt="arrow" />
@@ -70,7 +70,7 @@ const CatalogNavPart = () => {
             <span className={styles.checkmark}></span>
           </label>
         </div>
-      </div>
+      </div> */}
     </aside>
   );
 };

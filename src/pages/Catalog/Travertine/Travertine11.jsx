@@ -1,6 +1,8 @@
 import React from 'react';
 import PanelPagePrototype from '../../../components/prototype/PanelPagePrototype';
+
 import main_bg from '../../../assets/travertine_main_11.png';
+import bgImage from '../../../assets/travertine_11_bg.png';
 
 const Travertine11 = () => {
   const aboutText = `This decorative stone very accurately imitates the rock, which was lined with famous buildings - the ancient Colosseum and St. Peter's Cathedral in the Vatican.<br/>
@@ -17,6 +19,7 @@ const Travertine11 = () => {
         mainImg={main_bg}
         name="Travertine № 11"
         aboutText={aboutText}
+        bgImage={bgImage}
         activeColor={2}
         benefitText={benefitText}
         slabType={'travertine'}

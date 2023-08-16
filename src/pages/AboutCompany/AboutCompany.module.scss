@@ -32,7 +32,12 @@
     flex: 1;
   }
 
+  &__imgLogo {
+    width: 437px;
+  }
+
   &__text {
+    margin-left: 50px;
     width: 560px;
     color: #fff;
     font-size: 17px;

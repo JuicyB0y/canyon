@@ -1,5 +1,5 @@
 import React from 'react';
-import KansasPrototype from '../../../components/prototype/PanelPagePrototype';
+import PanelPagePrototype from '../../../components/prototype/PanelPagePrototype';
 
 const Kansas63 = () => {
   const aboutText = `The "Kansas" series is a stylish and high-quality decorative stone brick panel that has long been beloved by customers. 
@@ -18,7 +18,7 @@ const Kansas63 = () => {
 
   return (
     <>
-      <KansasPrototype
+      <PanelPagePrototype
         name="Kansas № 63"
         activeColor={1}
         aboutText={aboutText}

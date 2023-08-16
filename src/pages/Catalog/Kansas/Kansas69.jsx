@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Kansas_bg from '../../../assets/kansas_68-bg.png';
+import Kansas_bg from '../../../assets/kansas_69_bg.png';
 import Kansas_main from '../../../assets/kansas_69-main.png';
 import PanelPagePrototype from '../../../components/prototype/PanelPagePrototype';
 

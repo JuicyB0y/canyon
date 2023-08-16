@@ -1,6 +1,7 @@
 import React from 'react';
 import Wrapper from '../Wrapper/Wrapper';
 import parse from 'html-react-parser';
+import { Link } from 'react-router-dom';
 
 import styles from './PanelPagePrototype.module.scss';
 
@@ -17,7 +18,6 @@ import Kanzas_68 from '../../assets/kansas_68.png';
 import Kanzas_69 from '../../assets/kansas_69.png';
 import bracing from '../../assets/bracing.png';
 import BottomPart from '../BootomPart/BottomPart';
-import Kansas_bg from '../../assets/kansas_68-bg.png';
 
 import circleDakota_1 from '../../assets/dakota_circle_1.svg';
 import circleDakota_2 from '../../assets/dakota_circle_2.svg';
@@ -55,39 +55,61 @@ import travertine_7 from '../../assets/travertine_7.png';
 import travertine_11 from '../../assets/travertine_11.png';
 import travertine_20 from '../../assets/travertine_20.png';
 
+import compound_right from '../../assets/compound_right.png';
+import compound_left from '../../assets/compound_left.png';
+import compound_brick from '../../assets/compound_brick.png';
+import compound_angle from '../../assets/compound_angle.png';
+import compound_inplane from '../../assets/compound_inplane.png';
+
 const colorsArrKansas = [
-  { img: circle_bright, imgStyles: styles.info__circleBright },
-  { img: circle_dark, imgStyles: styles.info__circleDark },
-  { img: circle_gold, imgStyles: styles.info__circleGold },
-  { img: circle_grey, imgStyles: styles.info__circleGray },
+  { img: circle_bright, imgStyles: styles.info__circleBright, link: '/catalog/kansas/3' },
+  { img: circle_dark, imgStyles: styles.info__circleDark, link: '/catalog/kansas/63' },
+  { img: circle_gold, imgStyles: styles.info__circleGold, link: '/catalog/kansas/68' },
+  { img: circle_grey, imgStyles: styles.info__circleGray, link: '/catalog/kansas/69' },
 ];
 
 const colorsArrDakota = [
-  { img: circleDakota_1, imgStyles: styles.info__circleDakota_1 },
-  { img: circleDakota_2, imgStyles: styles.info__circleDakota_2 },
-  { img: circleDakota_3, imgStyles: styles.info__circleDakota_3 },
-  { img: circleDakota_4, imgStyles: styles.info__circleDakota_4 },
-  { img: circleDakota_5, imgStyles: styles.info__circleDakota_5 },
+  { img: circleDakota_1, imgStyles: styles.info__circleDakota_1, link: '/catalog/dakota/3' },
+  { img: circleDakota_2, imgStyles: styles.info__circleDakota_2, link: '/catalog/dakota/61' },
+  { img: circleDakota_3, imgStyles: styles.info__circleDakota_3, link: '/catalog/dakota/62' },
+  { img: circleDakota_4, imgStyles: styles.info__circleDakota_4, link: '/catalog/dakota/63' },
+  { img: circleDakota_5, imgStyles: styles.info__circleDakota_5, link: '/catalog/dakota/77' },
 ];
 
 const colorsArrArizona = [
-  { img: circleArizona_3, imgStyles: styles.info__circleArizona_3 },
-  { img: circleArizona_63, imgStyles: styles.info__circleArizona_63 },
-  { img: circleArizona_68, imgStyles: styles.info__circleArizona_68 },
-  { img: circleArizona_69, imgStyles: styles.info__circleArizona_69 },
+  { img: circleArizona_3, imgStyles: styles.info__circleArizona_3, link: '/catalog/arizona/3' },
+  { img: circleArizona_63, imgStyles: styles.info__circleArizona_63, link: '/catalog/arizona/63' },
+  { img: circleArizona_68, imgStyles: styles.info__circleArizona_68, link: '/catalog/arizona/68' },
+  { img: circleArizona_69, imgStyles: styles.info__circleArizona_69, link: '/catalog/arizona/69' },
 ];
 
 const colorsArrIndigo = [
-  { img: circleIndigo_3, imgStyles: styles.info__circleIndigo_3 },
-  { img: circleIndigo_68, imgStyles: styles.info__circleIndigo_68 },
-  { img: circleIndigo_69, imgStyles: styles.info__circleIndigo_69 },
+  { img: circleIndigo_3, imgStyles: styles.info__circleIndigo_3, link: '/catalog/indigo/3' },
+  { img: circleIndigo_68, imgStyles: styles.info__circleIndigo_68, link: '/catalog/indigo/68' },
+  { img: circleIndigo_69, imgStyles: styles.info__circleIndigo_69, link: '/catalog/indigo/69' },
 ];
 
 const colorsArrTravertine = [
-  { img: circleTravertine_3, imgStyles: styles.info__circleTravertine_3 },
-  { img: circleTravertine_7, imgStyles: styles.info__circleTravertine_7 },
-  { img: circleTravertine_11, imgStyles: styles.info__circleTravertine_11 },
-  { img: circleTravertine_20, imgStyles: styles.info__circleTravertine_20 },
+  {
+    img: circleTravertine_3,
+    imgStyles: styles.info__circleTravertine_3,
+    link: '/catalog/travertine/3',
+  },
+  {
+    img: circleTravertine_7,
+    imgStyles: styles.info__circleTravertine_7,
+    link: '/catalog/travertine/7',
+  },
+  {
+    img: circleTravertine_11,
+    imgStyles: styles.info__circleTravertine_11,
+    link: '/catalog/travertine/11',
+  },
+  {
+    img: circleTravertine_20,
+    imgStyles: styles.info__circleTravertine_20,
+    link: '/catalog/travertine/20',
+  },
 ];
 
 const cardsArrKansas = [
@@ -126,11 +148,13 @@ const cardsArrTravertine = [
 ];
 
 const compoundArrKansas = [
-  { name: 'RIGHT SIDE OF THE COMPOUND', price: '$$$$', image: bracing },
-  { name: 'LEFT SIDE OF THE COMPOUND', price: '$$$$', image: bracing },
-  { name: 'PROTRUDING BRICKS', price: '$$$$', image: bracing },
-  { name: 'NEXT ANGLE', price: '$$$$', image: bracing },
+  { name: 'RIGHT SIDE OF THE COMPOUND', price: '$$$$', image: compound_right },
+  { name: 'LEFT SIDE OF THE COMPOUND', price: '$$$$', image: compound_left },
+  { name: 'PROTRUDING BRICKS', price: '$$$$', image: compound_brick },
+  { name: 'NEXT ANGLE', price: '$$$$', image: compound_angle },
 ];
+
+const compoundArrDakota = [{ name: 'IN-PLANE ANGLE', price: '$$$$', image: compound_inplane }];
 
 const collectionKansas = [
   { text: 'High strength', number: '1' },
@@ -191,7 +215,7 @@ const PanelPagePrototype = ({
       case 'kansas':
         return [colorsArrKansas, cardsArrKansas, compoundArrKansas, collectionKansas];
       case 'dakota':
-        return [colorsArrDakota, cardsArrDakota, compoundArrKansas, collectionDakota];
+        return [colorsArrDakota, cardsArrDakota, compoundArrDakota, collectionDakota];
       case 'arizona':
         return [colorsArrArizona, cardsArrArizona, compoundArrKansas, collectionArizona];
       case 'indigo':
@@ -250,8 +274,8 @@ const PanelPagePrototype = ({
             <div className={styles.info__colors}>
               <p className={styles.info__name}>Colours</p>
               <div className={styles.info__circles}>
-                {moduleContentFunc(slabType)[0].map(({ img, imgStyles }, index) => (
-                  <div key={index} className={styles.info__circleWrapper}>
+                {moduleContentFunc(slabType)[0].map(({ img, imgStyles, link }, index) => (
+                  <Link key={index} to={link} className={styles.info__circleWrapper}>
                     <img
                       className={`${imgStyles} ${styles.info__circleBorder}`}
                       src={img}
@@ -260,7 +284,7 @@ const PanelPagePrototype = ({
                     {activeColor === index && (
                       <img className={styles.info__check} src={check_mark} alt="check_mark" />
                     )}
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>

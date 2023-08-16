@@ -9,7 +9,12 @@ import AllProjects from '../../components/AllProjects/AllProjects';
 import PrivateHouses from '../../components/PrivateHouses/PrivateHouses';
 import CommerceProj from '../../components/CommerceProj/CommerceProj';
 
-const casesArr = ['Портфолио проектов', 'Частные дома', 'Жилые комплексы', 'Коммерческие проекты'];
+const casesArr = [
+  'Project portfolio',
+  'Private houses',
+  'Residential complexes',
+  'Commercial projects',
+];
 
 const Portfolio = () => {
   const [chapter, setChapter] = useState(0);
@@ -27,7 +32,7 @@ const Portfolio = () => {
       case 1:
         return <PrivateHouses />;
       case 2:
-        return <h1 className={styles.temporary}>скоро здесь появится что-то крутецкое...</h1>;
+        return <h1 className={styles.temporary}>page in progress...</h1>;
       case 3:
         return <CommerceProj />;
       default:

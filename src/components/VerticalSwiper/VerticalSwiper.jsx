@@ -143,7 +143,7 @@ const VerticalSwiper = () => {
 
   return (
     <div className={styles.bigWrapper}>
-      <h3 className={styles.header}>Наша история</h3>
+      <h3 className={styles.header}>Our history</h3>
       <div className={styles.verticalSwiper}>
         <div className={styles.static}>20</div>
         <div className={styles.wrapper}>

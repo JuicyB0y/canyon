@@ -2,6 +2,7 @@ import React from 'react';
 import PanelPagePrototype from '../../../components/prototype/PanelPagePrototype';
 
 import dakota_main from '../../../assets/dakota_main_61.png';
+import bgImage from '../../../assets/dakota_61_bg.png';
 
 const aboutText = `The Dakota series of fiber concrete façade panels is a stylish imitation of a natural slate from a centuries-old canyon.<br/>
    Volumetric texture of the stone will noticeably decorate the building, with it any country house will turn into a luxurious European mansion.`;
@@ -17,6 +18,7 @@ const Dakota61 = () => {
       <PanelPagePrototype
         name="Dakota № 61"
         mainImg={dakota_main}
+        bgImage={bgImage}
         aboutText={aboutText}
         activeColor={1}
         slabType={'dakota'}

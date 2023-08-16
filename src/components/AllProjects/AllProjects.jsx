@@ -22,86 +22,86 @@ const AllProjects = () => {
     <div className={styles.examples}>
       <div className={styles.item1}>
         <img className={styles.image} src={house1} alt="house" />
-        <p className={styles.tag}>#частные дома</p>
-        <p className={styles.name}>Дом в сосновом лесу</p>
+        <p className={styles.tag}>#private house</p>
+        <p className={styles.name}>House in pine forest</p>
       </div>
 
       <div className={styles.item2}>
         <img className={styles.image} src={house2} alt="house" />
-        <p className={styles.tag}>#торговые центры</p>
-        <p className={styles.name}>ТЦ с озеленением и парковкой</p>
+        <p className={styles.tag}>#commercial object</p>
+        <p className={styles.name}>Mall with landscaping and parking</p>
       </div>
 
       <div className={styles.item3}>
         <img className={styles.image} src={house3} alt="house" />
-        <p className={styles.tag}>#частные дома</p>
-        <p className={styles.name}>Дом с черными элементами</p>
+        <p className={styles.tag}>#private house</p>
+        <p className={styles.name}>House with black elements</p>
       </div>
 
       <div className={styles.item4}>
         <img className={styles.image} src={house4} alt="house" />
-        <p className={styles.tag}>#частные дома</p>
-        <p className={styles.name}>Дом с террасой</p>
+        <p className={styles.tag}>#private house</p>
+        <p className={styles.name}>Terraced house</p>
       </div>
 
       <div className={styles.item5}>
         <img className={styles.image} src={house5} alt="house" />
-        <p className={styles.tag}>#??????</p>
-        <p className={styles.name}>Коммерческий объект</p>
+        <p className={styles.tag}>#commercial object</p>
+        <p className={styles.name}>Sports centre</p>
       </div>
 
       <div className={styles.item6}>
         <img className={styles.image} src={house6} alt="house" />
-        <p className={styles.tag}>#частные дома</p>
-        <p className={styles.name}>Дом с дымовой трубой</p>
+        <p className={styles.tag}>#private house</p>
+        <p className={styles.name}>White brick house</p>
       </div>
 
       <div className={styles.item7}>
         <img className={styles.image} src={house7} alt="house" />
-        <p className={styles.tag}>#частные дома</p>
-        <p className={styles.name}>Дом с дымовой трубой</p>
+        <p className={styles.tag}>#private house</p>
+        <p className={styles.name}>House with a chimney</p>
       </div>
 
       <div className={styles.item8}>
         <img className={styles.image} src={house8} alt="house" />
-        <p className={styles.tag}>#торговые центры</p>
-        <p className={styles.name}>ТЦ с озеленением и парковкой</p>
+        <p className={styles.tag}>#commercial object</p>
+        <p className={styles.name}>House for rent</p>
       </div>
 
       <div className={styles.item9}>
         <img className={styles.image} src={house9} alt="house" />
-        <p className={styles.tag}>#частные дома</p>
-        <p className={styles.name}>Дом с черными элементами</p>
+        <p className={styles.tag}>#commercial object</p>
+        <p className={styles.name}>Mall with landscaping and parking </p>
       </div>
 
       <div className={styles.item10}>
         <img className={styles.image} src={house10} alt="house" />
-        <p className={styles.tag}>#частные дома</p>
-        <p className={styles.name}>Дом с террасой</p>
+        <p className={styles.tag}>#private house</p>
+        <p className={styles.name}>Chalet house</p>
       </div>
 
       <div className={styles.item11}>
         <img className={styles.image} src={house11} alt="house" />
-        <p className={styles.tag}>#частные дома</p>
-        <p className={styles.name}>Дом в сосновом лесу</p>
+        <p className={styles.tag}>#commercial object</p>
+        <p className={styles.name}>Business center</p>
       </div>
 
       <div className={styles.item12}>
         <img className={styles.image} src={house12} alt="house" />
-        <p className={styles.tag}>#??????</p>
-        <p className={styles.name}>Коммерческий объект</p>
+        <p className={styles.tag}>#private house</p>
+        <p className={styles.name}>House in the cottage</p>
       </div>
 
       <div className={styles.item13}>
         <img className={styles.image} src={house13} alt="house" />
-        <p className={styles.tag}>#??????</p>
-        <p className={styles.name}>Коммерческий объект</p>
+        <p className={styles.tag}>#private house</p>
+        <p className={styles.name}>Dark brick house </p>
       </div>
 
       <div className={styles.item14}>
         <img className={styles.image} src={house14} alt="house" />
-        <p className={styles.tag}>#частные дома</p>
-        <p className={styles.name}>Дом с дымовой трубой</p>
+        <p className={styles.tag}>#commercial object </p>
+        <p className={styles.name}>Coffee shop</p>
       </div>
     </div>
   );

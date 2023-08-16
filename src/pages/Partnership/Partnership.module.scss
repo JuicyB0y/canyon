@@ -11,7 +11,8 @@
 .item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
+  // gap: 300px;
 }
 
 .item:nth-child(3) {
@@ -30,6 +31,12 @@
   margin-top: 18px;
   line-height: 132.344%;
   font-size: 20px;
+}
+
+.item__logo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .fromTop {

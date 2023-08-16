@@ -2,6 +2,7 @@ import React from 'react';
 import PanelPagePrototype from '../../../components/prototype/PanelPagePrototype';
 
 import Indigo_main from '../../../assets/indigo_main_68.png';
+import bgImage from '../../../assets/indigo_68_bg.png';
 
 const Indigo68 = () => {
   const aboutText = `When creating the fiber concrete panels "Indigo", our experts focused on the most popular customer requests. <br/>
@@ -17,6 +18,7 @@ const Indigo68 = () => {
       <PanelPagePrototype
         name="Indigo № 68"
         aboutText={aboutText}
+        bgImage={bgImage}
         activeColor={1}
         benefitText={benefitText}
         slabType={'indigo'}

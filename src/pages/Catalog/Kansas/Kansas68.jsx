@@ -1,7 +1,7 @@
 import React from 'react';
-import KansasPrototype from '../../../components/prototype/PanelPagePrototype';
+import PanelPagePrototype from '../../../components/prototype/PanelPagePrototype';
 
-import Kansas_bg from '../../../assets/kansas_68-bg.png';
+import Kansas_bg from '../../../assets/kansas_68_bg.png';
 import Kansas_main from '../../../assets/kansas_68-main.png';
 
 const Kansas68 = () => {
@@ -21,7 +21,7 @@ const Kansas68 = () => {
 
   return (
     <>
-      <KansasPrototype
+      <PanelPagePrototype
         name="Kansas № 68"
         aboutText={aboutText}
         activeColor={2}
